@@ -1,6 +1,8 @@
 import React from 'react';
 import { useLoaderData, useParams } from 'react-router-dom';
 import { saveReadDataFromLocalStorage, saveWishListDataLocalStorage } from '../Utility/Utility';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const BookDetails = () => {
     const books=useLoaderData()
@@ -12,9 +14,11 @@ const {book_Id,image,book_name,author,tags,category,rating,review,yearOf_publish
 
 const handleReadData=()=>{
   saveReadDataFromLocalStorage(book_Id)
+  toast('Books add succesfully')
 }
 const handleWishListData=()=>{
   saveWishListDataLocalStorage(book_Id)
+  toast('add to WishList')
 }
     
     return (
@@ -50,6 +54,7 @@ const handleWishListData=()=>{
             </div>
           </div>
         </div>
+        <ToastContainer></ToastContainer>
       </div>
     );
 };

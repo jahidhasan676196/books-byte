@@ -9,6 +9,7 @@ const Home = () => {
 
     return (
         <div>
+            <h3>{books.length}</h3>
             <Banner></Banner>
             <Books books={books}></Books>
         </div>
