@@ -1,12 +1,22 @@
 import { useLoaderData } from "react-router-dom";
+import BookCard from "../BookCard/BookCard";
+import { getWishListLocalStorageData } from "../Utility/Utility";
 
 
 const WishListBook = () => {
-    const h=useLoaderData()
+    const books=useLoaderData()
+    const wishBookDatas=getWishListLocalStorageData()
+    const newbooks=[]
+    for(const wishlistId of wishBookDatas){
+        const book=books.find(book=>book.book_Id==wishlistId)
+        newbooks.push(book)
+    }
+
     return (
         <div>
-            <h1>{h[1].author}</h1>
-            <h1>This is wish lisrt sed </h1>
+            {
+                newbooks.map(newbook=><BookCard newbook={newbook}></BookCard>)
+            }
         </div>
     );
 };

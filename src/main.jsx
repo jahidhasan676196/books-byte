@@ -12,12 +12,14 @@ import BookDetails from './Component/BookDetils/BookDetails.jsx';
 import ListedBook from './Component/ListedBook/ListedBook.jsx';
 import ReadBook from './Component/ReadBook/ReadBook.jsx';
 import WishListBook from './Component/WishListBook/WishListBook.jsx';
+import Eror from './Component/Eror/Eror.jsx';
 
 
 const router = createBrowserRouter([
   {
     path: "/",
     element:<Root></Root>,
+    errorElement:<Eror></Eror>,
     children:[
       {
         path:"/",
@@ -34,14 +36,14 @@ const router = createBrowserRouter([
         element:<ListedBook></ListedBook>,
         children:[
           {
-            path:"readbook",
+            index:true,
             element:<ReadBook></ReadBook>,
-            loader:()=>fetch('books.json')
+            loader:()=>fetch('../books.json')
           },
           {
             path:"wishlist",
             element:<WishListBook></WishListBook>,
-            loader:()=>fetch('books.json')
+             loader:()=>fetch('../books.json')
           }
         ]
       }
