@@ -1,9 +1,10 @@
 import { MdOutlineStarRate } from "react-icons/md";
+import { Link } from "react-router-dom";
 
 const Book = ({book}) => {
-    const{image,book_name,author,category,tags,rating}=book
+    const{book_Id,image,book_name,author,category,tags,rating}=book
     return (
-        <div className="card border text-start p-6 space-y-4">
+        <Link to={`/book/${book_Id}`} className="card border text-start p-6 space-y-4">
         <figure>
           <img
           className="rounded-2xl"
@@ -26,7 +27,7 @@ const Book = ({book}) => {
             </div>
           </div>
         </div>
-      </div>
+      </Link>
     );
 };
 
