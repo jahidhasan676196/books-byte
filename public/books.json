@@ -8,7 +8,7 @@
       "total_pages": 350,
       "rating": 4.5,
       "category": "Fantasy",
-      "tags": ["magic", "adventure", "friendship"],
+      "tags": ["magic", "adventure"],
       "publisher": "Dreamscape Press",
       "yearOf_publishing": 2020
     },
@@ -21,7 +21,7 @@
       "total_pages": 420,
       "rating": 4.7,
       "category": "Mystery",
-      "tags": ["mystery", "suspense", "crime"],
+      "tags": ["mystery", "suspense"],
       "publisher": "Black Oak Publishing",
       "yearOf_publishing": 2018
     },
@@ -34,7 +34,7 @@
       "total_pages": 500,
       "rating": 4.2,
       "category": "Science Fiction",
-      "tags": ["space", "future", "exploration"],
+      "tags": ["space", "future"],
       "publisher": "Galaxy Books",
       "yearOf_publishing": 2022
     },
@@ -47,7 +47,7 @@
       "total_pages": 300,
       "rating": 4.3,
       "category": "Romance",
-      "tags": ["love", "relationships", "romance"],
+      "tags": ["love", "relationships"],
       "publisher": "Heartstring Publishers",
       "yearOf_publishing": 2019
     },
@@ -60,7 +60,7 @@
       "total_pages": 220,
       "rating": 4.6,
       "category": "Self-help",
-      "tags": ["mindfulness", "happiness", "wellness"],
+      "tags": ["mindfulness", "happiness"],
       "publisher": "Wellness Press",
       "yearOf_publishing": 2021
     },
@@ -73,7 +73,7 @@
       "total_pages": 600,
       "rating": 4.8,
       "category": "History",
-      "tags": ["history", "empires", "civilization"],
+      "tags": ["history", "empires"],
       "publisher": "Legacy Publications",
       "yearOf_publishing": 2017
     }
