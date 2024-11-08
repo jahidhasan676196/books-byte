@@ -1,16 +1,24 @@
 import React from 'react';
 import { useLoaderData, useParams } from 'react-router-dom';
+import { saveReadDataFromLocalStorage, saveWishListDataLocalStorage } from '../Utility/Utility';
 
 const BookDetails = () => {
     const books=useLoaderData()
     const {id}=useParams()
-    console.log(id);
 const book=books.find(book=>book.book_Id==id)
-console.log(book);
-const {image,book_name,author,tags,category,rating,review,yearOf_publishing,publisher,total_pages}=book
+const {book_Id,image,book_name,author,tags,category,rating,review,yearOf_publishing,publisher,total_pages}=book;
+
+
+
+const handleReadData=()=>{
+  saveReadDataFromLocalStorage(book_Id)
+}
+const handleWishListData=()=>{
+  saveWishListDataLocalStorage(book_Id)
+}
     
     return (
-        <div className="hero bg-white border  mt-12 space-y-4">
+        <div className="hero bg-white   mt-12 mb-32 space-y-4">
         <div className="hero-content flex-col lg:flex-row gap-12">
             <div className='flex-1'>
             <img
@@ -37,8 +45,8 @@ const {image,book_name,author,tags,category,rating,review,yearOf_publishing,publ
             <p>Rating: <span className='text-[#131313]'>{rating}</span></p>
             </div>
             <div className='flex gap-4'>
-                <button className='btn border text-black'>Read</button>
-                <button className='btn border bg-[#50B1C9] text-white'>Wishlist</button>
+                <button onClick={handleReadData} className='btn border text-black'>Read</button>
+                <button onClick={handleWishListData} className='btn border bg-[#50B1C9] text-white'>Wishlist</button>
             </div>
           </div>
         </div>

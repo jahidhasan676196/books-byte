@@ -9,6 +9,9 @@ import {
 import Root from './Component/Root/Root.jsx';
 import Home from './Component/Home/Home.jsx';
 import BookDetails from './Component/BookDetils/BookDetails.jsx';
+import ListedBook from './Component/ListedBook/ListedBook.jsx';
+import ReadBook from './Component/ReadBook/ReadBook.jsx';
+import WishListBook from './Component/WishListBook/WishListBook.jsx';
 
 
 const router = createBrowserRouter([
@@ -25,6 +28,22 @@ const router = createBrowserRouter([
         path:"/book/:id",
         element:<BookDetails></BookDetails>,
         loader:()=>fetch('books.json')
+      },
+      {
+        path:"/listed",
+        element:<ListedBook></ListedBook>,
+        children:[
+          {
+            path:"readbook",
+            element:<ReadBook></ReadBook>,
+            loader:()=>fetch('books.json')
+          },
+          {
+            path:"wishlist",
+            element:<WishListBook></WishListBook>,
+            loader:()=>fetch('books.json')
+          }
+        ]
       }
     ]
   },
