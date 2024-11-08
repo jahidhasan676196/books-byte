@@ -1,0 +1,81 @@
+[
+    {
+      "book_Id": "1",
+      "book_name": "The Enchanted Woods",
+      "author": "Emily Hart",
+      "image": "https://i.ibb.co.com/fXt90nG/istockphoto-1332320231-1024x1024.jpg",
+      "review": "A beautifully written tale that immerses readers in a world of magic and wonder.",
+      "total_pages": 350,
+      "rating": 4.5,
+      "category": "Fantasy",
+      "tags": ["magic", "adventure", "friendship"],
+      "publisher": "Dreamscape Press",
+      "yearOf_publishing": 2020
+    },
+    {
+      "book_Id": "2",
+      "book_name": "Secrets of the Past",
+      "author": "Michael Stone",
+      "image": "https://i.ibb.co.com/LQ6vbdp/2.jpg",
+      "review": "A thrilling mystery that keeps readers on the edge of their seats.",
+      "total_pages": 420,
+      "rating": 4.7,
+      "category": "Mystery",
+      "tags": ["mystery", "suspense", "crime"],
+      "publisher": "Black Oak Publishing",
+      "yearOf_publishing": 2018
+    },
+    {
+      "book_Id": "3",
+      "book_name": "Journey to the Stars",
+      "author": "Sarah Vega",
+      "image": "https://i.ibb.co.com/LC662HJ/3.jpg",
+      "review": "An epic science fiction journey that explores the wonders of the universe.",
+      "total_pages": 500,
+      "rating": 4.2,
+      "category": "Science Fiction",
+      "tags": ["space", "future", "exploration"],
+      "publisher": "Galaxy Books",
+      "yearOf_publishing": 2022
+    },
+    {
+      "book_Id": "4",
+      "book_name": "A Taste of Romance",
+      "author": "Lily Chen",
+      "image": "https://i.ibb.co.com/cCnDKjH/4.jpg",
+      "review": "A heartwarming romance novel filled with passion and charm.",
+      "total_pages": 300,
+      "rating": 4.3,
+      "category": "Romance",
+      "tags": ["love", "relationships", "romance"],
+      "publisher": "Heartstring Publishers",
+      "yearOf_publishing": 2019
+    },
+    {
+      "book_Id": "5",
+      "book_name": "The Art of Living Mindfully",
+      "author": "James Hill",
+      "image": "https://i.ibb.co.com/G3BGQBw/5.jpg",
+      "review": "An insightful guide to achieving peace and happiness through mindfulness.",
+      "total_pages": 220,
+      "rating": 4.6,
+      "category": "Self-help",
+      "tags": ["mindfulness", "happiness", "wellness"],
+      "publisher": "Wellness Press",
+      "yearOf_publishing": 2021
+    },
+    {
+      "book_Id": "6",
+      "book_name": "The Rise of Empires",
+      "author": "Alex Carter",
+      "image": "https://i.ibb.co.com/kDxtgzp/6.jpg",
+      "review": "A comprehensive history of ancient empires and their influence on the modern world.",
+      "total_pages": 600,
+      "rating": 4.8,
+      "category": "History",
+      "tags": ["history", "empires", "civilization"],
+      "publisher": "Legacy Publications",
+      "yearOf_publishing": 2017
+    }
+  ]
+  
