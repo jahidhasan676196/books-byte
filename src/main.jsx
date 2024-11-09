@@ -13,6 +13,7 @@ import ListedBook from './Component/ListedBook/ListedBook.jsx';
 import ReadBook from './Component/ReadBook/ReadBook.jsx';
 import WishListBook from './Component/WishListBook/WishListBook.jsx';
 import Eror from './Component/Eror/Eror.jsx';
+import PageRead from './Component/PageRead/PageRead.jsx';
 
 
 const router = createBrowserRouter([
